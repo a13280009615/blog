@@ -1,0 +1,31 @@
+#  使用thymeleaf模板
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    mode: HTML
+    servlet:
+      content-type: text/html
+    cache: false
+
+  #    设置数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.105:3306/blog?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+#    jpa的相关配置 显示 sql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#    设置日志的级别  默认的root 级别 以及 自定义的包的日志级别
+logging:
+  level:
+    root: info
+    com.zf: debug
+  file:
+    name: log/blog.log
+# 设置访问项目的路径
+
