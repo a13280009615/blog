@@ -1,5 +1,6 @@
 package com.zf.service.impl;
 
+import com.zf.exception.TagNotFoundException;
 import com.zf.exception.TypeNotFoundException;
 import com.zf.pojo.Tag;
 import com.zf.repository.TagRepository;
@@ -43,7 +44,7 @@ public class TagServiceImpl implements TagService {
     public Tag updateTag(Long id, Tag Tag) {
         Tag t = tagRepository.getOne(id);
         if (t == null){
-            throw  new TypeNotFoundException("不存在该类型");
+            throw  new TagNotFoundException("不存在该类型");
         }
         BeanUtils.copyProperties(Tag,t);
 

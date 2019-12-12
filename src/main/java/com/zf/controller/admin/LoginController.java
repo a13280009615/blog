@@ -41,7 +41,7 @@ public class LoginController {
             return "admin/index";
         }else {
             attributes.addFlashAttribute("message","用户名或密码错误");
-            return  "redirect:/admin";
+            return  "redirect:admin/login";
         }
     }
 

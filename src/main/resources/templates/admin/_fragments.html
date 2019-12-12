@@ -25,8 +25,8 @@
             <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>标签</a>
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item ">
-                    <div class="text">
-                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
+                    <div class="text" th:text="${session.personInfo.nickname}">
+                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image" th:src="@{${session.personInfo.avatar}}">
                         郑凡
                     </div>
                     <i class="dropdown icon"></i>

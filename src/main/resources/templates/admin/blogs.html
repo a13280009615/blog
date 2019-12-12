@@ -34,11 +34,11 @@
        <i class="sidebar icon"></i>
   </a>
  </nav>
- <div th:replace="admin/_fragments :: content(2)" class="ui attached pointing menu">
+ <div class="ui attached pointing menu">
      <div class="ui container">
          <div class="right menu">
              <a href="#" class="item">发布</a>
-             <a href="#" class="teal item active">列表</a>
+             <a href="#" class="item">列表</a>
          </div>
      </div>
 
@@ -47,19 +47,22 @@
   <!-- 内容区 -->
   <div class="m-padding-tb-massive">
      <div class="ui container">
-         <form action="#" method="post" class="ui segment form">
+         <div  class="ui secondary segment form">
+             <input type="hidden" name="page">
              <div class="inline  fields">
                  <div class="field">
-                     <input type="text" name="tittle" placeholder="标题">
+                     <input type="text" name="title" placeholder="标题">
                  </div>
                  <div class="field">
                     <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
+                        <input type="hidden" name="typeId">
                         <i class="dropdown icon"></i>
                         <div class="default text">分类</div>
                         <div class="menu">
-                            <div class="item" data-value="1">错误日志</div>
+                            <div th:each="type : ${types}" class="item" th:data-value="${type.id}" th:text="${type.name}" data-value="1">错误日志</div>
+                            <!--/*-->
                             <div class="item" data-value="1">开发者手册</div>
+                            <!--*/-->
                         </div>
                     </div>
 
@@ -71,50 +74,53 @@
                      </div>
                  </div>
                  <div class="field">
-                     <button class="ui mini teal basic button">
+                     <button type="button" id="search-btn" class="ui mini teal basic button">
                          <i class="search icon"></i>搜索
                      </button>
                  </div>
 
              </div>
-         </form>
+         </div>
 
-         <table class="ui celled table">
-             <thead>
-             <tr>
-                 <th></th>
-                 <th>标题</th>
-                 <th>类型</th>
-                 <th>推荐</th>
-                 <th>更新时间</th>
-                 <th>操作</th>
-             </tr>
-             </thead>
-             <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>刻意联系清单</td>
-                  <td>认知升级</td>
-                  <td>是</td>
-                  <td>2019-12-10 09:45</td>
-                  <td>
-                      <a href="#" class="ui mini teal basic button">编辑</a>
-                      <a href="#" class="ui mini red basic button">删除</a>
-                  </td>
-              </tr>
-             </tbody>
-             <tfoot>
-                <tr>
-                    <th colspan="6">
-                        <div class="ui pagination mini menu">
-                            <a class="item">上一页</a>
-                            <a class="item">下一页</a>
-                        </div>
-                        <a href="" class="ui mini right floated teal basic button">新增</a>
-                    </th>
-                </tr>
-             </tfoot>
-         </table>
+         <div id="table-container">
+             <table th:fragment="blogList" class="ui compact celled teal table" >
+                 <thead>
+                 <tr>
+                     <th></th>
+                     <th>标题</th>
+                     <th>类型</th>
+                     <th>推荐</th>
+                     <th>更新时间</th>
+                     <th>操作</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr th:each="blog,iterStat : ${page.content}">
+                     <td th:text="{iterStat.count}">1</td>
+                     <td th:text="{blog.title}">刻意联系清单</td>
+                     <td th:text="{blog.type.name}">认知升级</td>
+                     <td th:text="{blog.recommend} ? '是' : '否'">是</td>
+                     <td th:text="{blog.updateTime}">2019-12-10 09:45</td>
+                     <td>
+                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+                         <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
+                     </td>
+                 </tr>
+                 </tbody>
+                 <tfoot>
+                 <tr>
+                     <th colspan="6">
+                         <div class="ui pagination mini menu" th:if="${page.totalPages}>1">
+                             <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
+                             <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
+                         </div>
+                         <a href="" class="ui mini right floated teal basic button">新增</a>
+                     </th>
+                 </tr>
+                 </tfoot>
+             </table>
+         </div>
+
 
      </div>
   </div>
@@ -172,6 +178,24 @@
         $('.ui.dropdown').dropdown({
             on : 'hover'
         });
- 
+        function  page(obj) {
+            $("[name='page']").val($(obj).data("page"));
+            loadData();
+        }
+        function  loadData() {
+            $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+                title : $("[name='title']").val(),
+                typeId : $("[name='typeId']").val(),
+                recommend : $("[name='recommend']").prop('checked'),
+                page : $("[name='page']").val()
+                }
+            );
+        }
+
+        $("#search-btn").click(
+            function () {
+                loadData();
+            }
+        );
 </script>
 </html>

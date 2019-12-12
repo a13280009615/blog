@@ -1,4 +1,4 @@
-#  Ê¹ÓÃthymeleafÄ£°å
+#  é…ç½® thymeleaf
 spring:
   thymeleaf:
     prefix: classpath:/templates/
@@ -9,23 +9,23 @@ spring:
       content-type: text/html
     cache: false
 
-  #    ÉèÖÃÊı¾İÔ´
+  #   é…ç½®æ•°æ®æº
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.1.105:3306/blog?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
-#    jpaµÄÏà¹ØÅäÖÃ ÏÔÊ¾ sql
+#    jpaç›¸å…³è®¾ç½® sql
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-#    ÉèÖÃÈÕÖ¾µÄ¼¶±ğ  Ä¬ÈÏµÄroot ¼¶±ğ ÒÔ¼° ×Ô¶¨ÒåµÄ°üµÄÈÕÖ¾¼¶±ğ
+# æ—¥å¿— ç›¸å…³è®¾ç½®
 logging:
   level:
     root: info
     com.zf: debug
   file:
     name: log/blog.log
-# ÉèÖÃ·ÃÎÊÏîÄ¿µÄÂ·¾¶
+
 
