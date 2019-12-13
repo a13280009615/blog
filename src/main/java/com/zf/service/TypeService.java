@@ -22,6 +22,8 @@ public interface TypeService {
 
     void deleteType(Long id);
 
+    List<Type> listTypeTop(Integer size);
+
     Type getTypeByName(String name);
 
     List<Type> listType();

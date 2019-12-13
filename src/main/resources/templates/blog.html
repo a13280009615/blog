@@ -46,32 +46,33 @@
         <div class="ui top attached segment">
              <div class="ui horizontal link list">
                <div class="item">
-                  <img src="https://picsum.photos/id/1/100/100" class="ui avatar image"></img>
+                  <img src="https://picsum.photos/id/1/100/100" th:src="@{${blog.personInfo.avatar}}" class="ui avatar image"></img>
                   <div class="content">
-                     <a class="header">郑凡</a>
+                     <a class="header" th:text="${blog.personInfo.nickname}">郑凡</a>
                   </div>
                </div>
                <div class="item">
-                <i class="calendar icon"></i> 2017-10-2
+                <i class="calendar icon"></i>
+                   <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2017-10-2</span>
                </div>
                <div class="item">
-                 <i class="eye icon"></i> 123
+                 <i class="eye icon"></i> <span th:text="${blog.views}">123</span>
                </div>
              </div>  
         </div>
         <!-- 图片区域 -->
         <div class="ui  attached segment">
-           <img src="https://picsum.photos/id/1/800/450" class="ui fluid image rounded">
+           <img src="https://picsum.photos/id/1/800/450" th:src="@{${blog.firstPicture}}" class="ui fluid image rounded">
         </div>
          <!-- 主要内容区域 -->
         <div class="ui  attached padded segment">
             <div class="ui  right aligned basic segment">
-                <div class="ui orange basic label">原创</div>
+                <div class="ui orange basic label"  th:text="${blog.flag}">原创</div>
             </div>
               
-            <h2 class="ui center aligned header">关于刻意练习的清单</h2>
+            <h2 class="ui center aligned header"  th:text="${blog.title}">关于刻意练习的清单</h2>
             <br/> 
-            <div id="content" class="js-toc-content m-padded-lr-responsive m-padding-tb-massive typo typo-selection">
+            <div id="content"  th:utext="${blog.content}" class="js-toc-content m-padded-lr-responsive m-padding-tb-massive typo typo-selection">
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
                 <pre><code class="language-css">p { color: red }</code></pre>
@@ -433,7 +434,7 @@ h5,h6{font-size:1em;}
             </div>
             <!-- 标签  -->
             <div class="m-padded-lr-responsive">
-              <div class="ui basic teal left pointing label">方法论</div>
+              <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</div>
             </div>
             <!-- 赞赏 -->
             <div class="ui center aligned basic segment">
@@ -443,11 +444,11 @@ h5,h6{font-size:1em;}
                   <div class="ui orange basic label">
                  <div class="ui images" style="font-size:inherit !important;">
                      <div class="image">
-                       <img src="../static/images/wechat.jpg"  th:src="@{images/wechat.jpg}" class="ui rounded bordered image " style="width:120px"></img>
+                       <img src="../static/images/wechat.jpg"  th:src="@{/images/wechat.jpg}" class="ui rounded bordered image " style="width:120px"></img>
                        <div>支付宝支付</div>
                      </div>
                      <div class="image">
-                       <img src="../static/images/wechat.jpg" th:src="@{images/wechat.jpg}" class="ui rounded bordered image" style="width:120px"></img>
+                       <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded bordered image" style="width:120px"></img>
                       <div>微信支付</div>
                      </div>
                  </div>
@@ -459,15 +460,15 @@ h5,h6{font-size:1em;}
            <div class="ui middle aligned grid">
              <div class="eleven wide column">
                 <ul class="list">
-                    <li>作者:郑凡（联系作者）</li>
-                    <li>发表时间:2017-10-02 09:08</li>
+                    <li>作者:<span th:text="${blog.personInfo.nickname}">郑凡</span> <a href="" th:href="@{/about}" target="_blank">（联系作者）</a></li>
+                    <li>发表时间:<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd : HH:mm')}">2017-10-02 09:08</span></li>
                     <li>版权声明:自由转-非商用</li>
                     <li>公众号转载：请在文末添加作者公众号二维码</li>
                 </ul>
              </div>
              <!-- 二维码部分 -->
              <div class="five wide column">
-              <img src="../static/images/wechat.jpg" class="ui rounded right floated bordered image" style="width:110px"></img>
+              <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded right floated bordered image" style="width:110px"></img>
              </div>
            </div>
         </div>
@@ -650,7 +651,7 @@ h5,h6{font-size:1em;}
 <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 <script src="../static/lib/waypoints/jquery.waypoints.min.js"></script>
 <!--/*/</th:block>/*/-->
-<script type="text/javascript">
+<script type="text/javascript" th:inline="javascript">
 
          tocbot.init({
              tocSelector: '.js-toc',
@@ -679,9 +680,11 @@ h5,h6{font-size:1em;}
              popup : $('.wechatQR'),
              position : 'left center'
          });
+         var  serurl="127.0.0.1:8080";
+         var url=/*[[@{/blog/{id}(id=${blog.id})}]]*/"";
          /**生成二维码*/
          var  qrcode = new QRCode("qrcode",{
-             text: "http://jindo.dev.naver.com/collie",
+             text: serurl+url,
              width: 100,
              height: 100,
              colorDark :"#000000",

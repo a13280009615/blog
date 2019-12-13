@@ -8,7 +8,9 @@ import com.zf.service.TypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -59,6 +61,13 @@ public class TypeServiceImpl implements TypeService {
     @Transactional
     public void deleteType(Long id) {
         typeRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        Sort  sort  = Sort.by(Sort.Direction.DESC,"blogs.size");
+        Pageable pageable =  PageRequest.of(0,size,sort);
+        return typeRepository.findTop(pageable);
     }
 
     @Override

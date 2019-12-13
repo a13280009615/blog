@@ -2,6 +2,7 @@ package com.zf.pojo;
 
 import lombok.Data;
 
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,6 +23,8 @@ public class Blog {
 
     private String title;
    //内容
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private  String content;
    //首图
     private String firstPicture;
@@ -45,9 +48,14 @@ public class Blog {
     private Date  createTime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
+    @Transient
+    private String tagIds;
 
     @ManyToOne
     private Type type;
+
+    //博客描述
+    private String description;
 
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<Tag> tags = new ArrayList<>();
@@ -57,4 +65,29 @@ public class Blog {
 
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
+
+
+    public void init(){
+     this.tagIds = tagsToIds(this.getTags());
+    }
+
+
+   private String tagsToIds(List<Tag> tags) {
+    if (!tags.isEmpty()) {
+     StringBuffer ids = new StringBuffer();
+     boolean flag = false;
+     for (Tag tag : tags) {
+      if (flag) {
+       ids.append(",");
+      } else {
+       flag = true;
+      }
+      ids.append(tag.getId());
+     }
+     return ids.toString();
+    } else {
+     return tagIds;
+    }
+   }
+
 }
