@@ -45,6 +45,18 @@ public class LoginController {
         }
     }
 
+
+    @GetMapping("/login")
+    public String loginIndex(HttpSession session){
+        PersonInfo personInfo = (PersonInfo) session.getAttribute("personInfo");
+        if(personInfo == null){
+            return "admin/login";
+        }else {
+            return "admin/index";
+        }
+    }
+
+
     @GetMapping("/logout")
     public  String loginOut(HttpSession session){
         session.removeAttribute("personInfo");

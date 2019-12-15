@@ -28,4 +28,5 @@ logging:
   file:
     name: log/blog.log
 
-
+comment:
+   avatar: /images/avatar.png

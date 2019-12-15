@@ -42,4 +42,8 @@ public class Comment {
     private  Comment parentComment;
 
 
+    @Column(columnDefinition = "false")
+    private boolean adminComment;
+
+
 }

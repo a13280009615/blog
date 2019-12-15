@@ -1,6 +1,7 @@
 package com.zf.pojo;
 
 import lombok.Data;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "t_personInfo")
+@Proxy(lazy = false)
 public class PersonInfo {
 
     @Id

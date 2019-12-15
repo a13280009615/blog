@@ -19,6 +19,9 @@ body{
         color: #333  !important;
 
 }
+.m-teal{
+	color: #00B5AD !important;
+}
 
 .m-position-fixed{
 	position: fixed;
@@ -31,6 +34,11 @@ body{
 .m-shadow-small{
 	-webkit-box-shadow : 0 4px 8px rgba(0,0,0,0.2) !important;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important; 
+}
+
+.m-padded-small{
+	padding-top:0.2em !important;
+	padding-bottom: 0.2em !important;
 }
 
 .m-padded-mini{
@@ -49,6 +57,11 @@ body{
 }
 .m-margin-top-large{
 	margin-top: 2em !important;
+}
+
+
+.m-margin-top-mimi{
+	margin-top: 0.5em !important;
 }
 .m-margin-bottom-mini{
 	margin-bottom: 0.5em !important;
