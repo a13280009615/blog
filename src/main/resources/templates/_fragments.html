@@ -23,7 +23,7 @@
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini idea icon"></i>分类</a>
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>标签</a>
-            <a href="#" th:href="@{/archives/-1}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="mini clone icon"></i>归档</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="mini clone icon"></i>归档</a>
             <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="mini info icon"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="" th:action="@{/search}" method="post" target="_blank">
@@ -56,19 +56,22 @@
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header">最近博客</h4>
-                <div class="ui inverted link list">
-                    <a href="" class="item">用户故事 （User Story）</a>
-                    <a href="" class="item">用户故事 （User Story）</a>
-                    <a href="" class="item">用户故事 （User Story）</a>
+                <div id="newBlog-container">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newBlogs}" th:text="${blog.title}">用户故事 （User Story）</a>
+                        <!--/*-->
+                        <a href="" class="item">用户故事 （User Story）</a>
+                        <a href="" class="item">用户故事 （User Story）</a>
+                        <!--*/-->
+                    </div>
                 </div>
 
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header">最近博客</h4>
+                <h4 class="ui inverted header">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="" class="item">用户故事 （User Story）</a>
-                    <a href="" class="item">用户故事 （User Story）</a>
-                    <a href="" class="item">用户故事 （User Story）</a>
+                    <a href="" class="item m-padded-mini"  th:text="#{index.email}">Email:a13280009615@163.com</a>
+                    <a href="" class="item m-padded-mini">QQ : 1055963395</a>
                 </div>
             </div>
             <div class="seven wide column">
@@ -93,6 +96,10 @@
     <!--平滑滚动插件-->
     <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}" ></script>
+    <script type="text/javascript">
+        $('#newBlog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
+    </script>
 
 </th:block>
 

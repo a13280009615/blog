@@ -65,7 +65,7 @@
                       <div class="ui teal left pointing basic label">...</div>
                   </div>
                   <div class="ui bottom attached segment">
-                      <a href="#" class="ui circular icon button">
+                      <a href="#" target="_blank" th:href="@{https://github.com/}" class="ui circular icon button">
                           <i class="github icon"></i>
                       </a>
                       <a href="#" class="ui wechat circular icon button">
@@ -76,7 +76,7 @@
                       </a>
                   </div>
                   <div class="ui wechatQR flowing popup transition hidden">
-                      <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 120px">
+                      <img src="../static/images/wechat.jpg"  th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 120px">
                   </div>
 
               </div>
