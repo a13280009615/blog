@@ -36,7 +36,7 @@ public class BlogController {
     TagService tagService;
 
     @GetMapping("/blogs")
-    public String list(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
+    public String list(@PageableDefault(size = 10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                        Model model, BlogQuery blog){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("page",blogService.listBlog(pageable, blog));
