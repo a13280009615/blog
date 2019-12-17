@@ -47,7 +47,7 @@ public class BlogController {
      * 查询的时候   配合 thymeleaf模板引擎 实现局部刷新
      * */
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                        Model model,BlogQuery blog){
         model.addAttribute("page",blogService.listBlog(pageable, blog));
         return "admin/blogs :: blogList";

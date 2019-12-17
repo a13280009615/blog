@@ -33,7 +33,7 @@ public class TypeController {
      *  分类详情页
      * */
     @GetMapping("/types")
-    public String types(@PageableDefault(size = 3 ,sort = {"id"},direction = Sort.Direction.ASC) Pageable pageable,
+    public String types(@PageableDefault(size = 10 ,sort = {"id"},direction = Sort.Direction.ASC) Pageable pageable,
                         Model model){
 
            model.addAttribute("page", typeService.listType(pageable));

@@ -33,7 +33,7 @@ public class TagController {
      *  分类详情页
      * */
     @GetMapping("/tags")
-    public String types(@PageableDefault(size = 3 ,sort = {"id"},direction = Sort.Direction.ASC) Pageable pageable,
+    public String types(@PageableDefault(size = 10 ,sort = {"id"},direction = Sort.Direction.ASC) Pageable pageable,
                         Model model){
 
         model.addAttribute("page", tagService.listTag(pageable));
