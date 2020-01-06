@@ -1,146 +1,38 @@
-2019-12-17 13:53:11.948  INFO 8056 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 8056 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
-2019-12-17 13:53:11.959 DEBUG 8056 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2019-12-17 13:53:11.959  INFO 8056 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
-2019-12-17 13:53:13.198  INFO 8056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-17 13:53:13.352  INFO 8056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139ms. Found 5 JPA repository interfaces.
-2019-12-17 13:53:13.775  INFO 8056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 13:53:14.347  INFO 8056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-17 13:53:14.363  INFO 8056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-17 13:53:14.363  INFO 8056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-17 13:53:14.619  INFO 8056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-17 13:53:14.619  INFO 8056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2571 ms
-2019-12-17 13:53:14.930  INFO 8056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-17 13:53:15.053  INFO 8056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-17 13:53:15.390  INFO 8056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-17 13:53:15.605  INFO 8056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-17 13:53:15.607  WARN 8056 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-12-17 13:53:15.800  INFO 8056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-17 13:53:15.831  INFO 8056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2019-12-17 13:53:17.132  INFO 8056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-17 13:53:17.143  INFO 8056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-17 13:53:18.661  WARN 8056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-17 13:53:18.973  INFO 8056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-17 13:53:19.144  INFO 8056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-17 13:53:19.554  INFO 8056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-17 13:53:19.557  INFO 8056 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 8.279 seconds (JVM running for 9.469)
-2019-12-17 14:18:10.143  INFO 4016 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 4016 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
-2019-12-17 14:18:10.146 DEBUG 4016 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2019-12-17 14:18:10.147  INFO 4016 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
-2019-12-17 14:18:11.125  INFO 4016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-17 14:18:11.279  INFO 4016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 5 JPA repository interfaces.
-2019-12-17 14:18:11.754  INFO 4016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 14:18:12.326  INFO 4016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-17 14:18:12.338  INFO 4016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-17 14:18:12.339  INFO 4016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-17 14:18:12.566  INFO 4016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-17 14:18:12.566  INFO 4016 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2347 ms
-2019-12-17 14:18:12.830  INFO 4016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-17 14:18:12.914  INFO 4016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-17 14:18:13.170  INFO 4016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-17 14:18:13.304  INFO 4016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-17 14:18:13.306  WARN 4016 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-12-17 14:18:13.468  INFO 4016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-17 14:18:13.493  INFO 4016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2019-12-17 14:18:14.687  INFO 4016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-17 14:18:14.698  INFO 4016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-17 14:18:16.319  WARN 4016 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-17 14:18:16.633  INFO 4016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-17 14:18:16.783  INFO 4016 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-17 14:18:17.185  INFO 4016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-17 14:18:17.188  INFO 4016 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 7.677 seconds (JVM running for 8.822)
-2019-12-17 14:18:27.848  INFO 4016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-17 14:18:27.849  INFO 4016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-17 14:18:27.870  INFO 4016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
-2019-12-17 14:18:27.927  INFO 4016 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2019-12-17 14:18:28.336  WARN 4016 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2019-12-17 14:18:28.359  WARN 4016 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2019-12-17 14:18:28.367  INFO 4016 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
-2019-12-17 14:18:30.392  INFO 4016 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
-2019-12-17 14:18:30.403  INFO 4016 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
-2019-12-17 14:19:57.113  INFO 5756 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 5756 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
-2019-12-17 14:19:57.117 DEBUG 5756 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2019-12-17 14:19:57.118  INFO 5756 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
-2019-12-17 14:19:58.142  INFO 5756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-17 14:19:58.287  INFO 5756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 5 JPA repository interfaces.
-2019-12-17 14:19:58.715  INFO 5756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 14:19:59.356  INFO 5756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-17 14:19:59.369  INFO 5756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-17 14:19:59.370  INFO 5756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-17 14:19:59.593  INFO 5756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-17 14:19:59.594  INFO 5756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2337 ms
-2019-12-17 14:19:59.873  INFO 5756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-17 14:19:59.968  INFO 5756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-17 14:20:00.357  INFO 5756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-17 14:20:00.487  INFO 5756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-17 14:20:00.488  WARN 5756 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-12-17 14:20:00.652  INFO 5756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-17 14:20:00.677  INFO 5756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2019-12-17 14:20:01.848  INFO 5756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-17 14:20:01.858  INFO 5756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-17 14:20:03.230  WARN 5756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-17 14:20:03.521  INFO 5756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-17 14:20:03.672  INFO 5756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-17 14:20:04.057  INFO 5756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-17 14:20:04.060  INFO 5756 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 7.622 seconds (JVM running for 8.787)
-2019-12-17 14:20:34.738  INFO 8608 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 8608 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
-2019-12-17 14:20:34.742 DEBUG 8608 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2019-12-17 14:20:34.743  INFO 8608 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
-2019-12-17 14:20:35.703  INFO 8608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-17 14:20:35.850  INFO 8608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 5 JPA repository interfaces.
-2019-12-17 14:20:36.288  INFO 8608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 14:20:36.900  INFO 8608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-17 14:20:36.916  INFO 8608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-17 14:20:36.917  INFO 8608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-17 14:20:37.146  INFO 8608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-17 14:20:37.147  INFO 8608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2333 ms
-2019-12-17 14:20:37.417  INFO 8608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-17 14:20:37.508  INFO 8608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-17 14:20:37.784  INFO 8608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-17 14:20:37.937  INFO 8608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-17 14:20:37.939  WARN 8608 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-12-17 14:20:38.124  INFO 8608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-17 14:20:38.149  INFO 8608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2019-12-17 14:20:39.338  INFO 8608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-17 14:20:39.348  INFO 8608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-17 14:20:40.777  WARN 8608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-17 14:20:41.083  INFO 8608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-17 14:20:41.241  INFO 8608 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-17 14:20:41.644  INFO 8608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-17 14:20:41.647  INFO 8608 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 7.599 seconds (JVM running for 8.79)
-2019-12-17 14:20:47.312  INFO 8608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-17 14:20:47.312  INFO 8608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-17 14:20:47.327  INFO 8608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2019-12-17 14:22:09.519  INFO 6324 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 6324 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
-2019-12-17 14:22:09.523 DEBUG 6324 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2019-12-17 14:22:09.523  INFO 6324 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
-2019-12-17 14:22:10.485  INFO 6324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-17 14:22:10.628  INFO 6324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131ms. Found 5 JPA repository interfaces.
-2019-12-17 14:22:11.052  INFO 6324 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-17 14:22:11.686  INFO 6324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-12-17 14:22:11.700  INFO 6324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-17 14:22:11.700  INFO 6324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-17 14:22:11.919  INFO 6324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-17 14:22:11.919  INFO 6324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2319 ms
-2019-12-17 14:22:12.192  INFO 6324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-17 14:22:12.285  INFO 6324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-17 14:22:12.546  INFO 6324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-17 14:22:12.677  INFO 6324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-17 14:22:12.679  WARN 6324 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2019-12-17 14:22:12.854  INFO 6324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-17 14:22:12.879  INFO 6324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2019-12-17 14:22:14.029  INFO 6324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-17 14:22:14.041  INFO 6324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-17 14:22:15.421  WARN 6324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-17 14:22:15.709  INFO 6324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-17 14:22:15.855  INFO 6324 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-17 14:22:16.239  INFO 6324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-12-17 14:22:16.242  INFO 6324 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 7.33 seconds (JVM running for 8.501)
-2019-12-17 14:22:35.200  INFO 6324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-17 14:22:35.201  INFO 6324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-17 14:22:35.215  INFO 6324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2019-12-17 14:22:35.271  INFO 6324 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
-2019-12-17 14:22:35.650  WARN 6324 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2019-12-17 14:22:35.673  WARN 6324 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2019-12-17 14:22:35.681  INFO 6324 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
-2019-12-17 14:22:37.434  INFO 6324 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
-2019-12-17 14:22:37.444  INFO 6324 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2019-12-22 14:50:09.373  INFO 6532 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on XTZ-20190926XIZ with PID 6532 (E:\IdeaProjects\blog\target\classes started by Administrator in E:\IdeaProjects\blog)
+2019-12-22 14:50:09.384 DEBUG 6532 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-22 14:50:09.385  INFO 6532 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2019-12-22 14:50:10.738  INFO 6532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-22 14:50:10.910  INFO 6532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 5 JPA repository interfaces.
+2019-12-22 14:50:11.405  INFO 6532 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-22 14:50:12.123  INFO 6532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-22 14:50:12.141  INFO 6532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-22 14:50:12.142  INFO 6532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-22 14:50:12.400  INFO 6532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-22 14:50:12.401  INFO 6532 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2914 ms
+2019-12-22 14:50:12.726  INFO 6532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-22 14:50:12.853  INFO 6532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-22 14:50:13.206  INFO 6532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-22 14:50:13.374  INFO 6532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-22 14:50:13.376  WARN 6532 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-22 14:50:13.582  INFO 6532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-22 14:50:13.619  INFO 6532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-22 14:50:14.955  INFO 6532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-22 14:50:14.966  INFO 6532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-22 14:50:16.417  WARN 6532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-22 14:50:16.722  INFO 6532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-22 14:50:16.889  INFO 6532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-22 14:50:17.308  INFO 6532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-22 14:50:17.311  INFO 6532 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 8.844 seconds (JVM running for 10.273)
+2019-12-22 14:50:17.404  INFO 6532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-22 14:50:17.404  INFO 6532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-22 14:50:17.422  INFO 6532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-22 14:50:17.478  INFO 6532 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2019-12-22 14:50:17.891  WARN 6532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-22 14:50:17.915  WARN 6532 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-22 14:50:17.922  INFO 6532 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2019-12-22 14:50:22.107  INFO 6532 --- [http-nio-8080-exec-2] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/blog/52', ip='127.0.0.1', classMethod='com.zf.controller.IndexController.blog', args=[52, {}]}
+2019-12-22 14:50:22.233  INFO 6532 --- [http-nio-8080-exec-2] com.zf.aspect.LogAspect                  : Result : blog
+2019-12-22 14:50:38.873  INFO 6532 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2019-12-22 14:50:38.883  INFO 6532 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2019-12-22 14:50:39.479  INFO 6532 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/comments/52', ip='127.0.0.1', classMethod='com.zf.controller.CommentController.commentList', args=[52, {}]}
+2019-12-22 14:50:39.510  INFO 6532 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Result : blog :: commentList
