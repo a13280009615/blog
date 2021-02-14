@@ -36,3 +36,250 @@
 2019-12-22 14:50:38.883  INFO 6532 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
 2019-12-22 14:50:39.479  INFO 6532 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/comments/52', ip='127.0.0.1', classMethod='com.zf.controller.CommentController.commentList', args=[52, {}]}
 2019-12-22 14:50:39.510  INFO 6532 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Result : blog :: commentList
+2021-02-14 13:25:41.717  INFO 2401 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2401 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:25:41.722 DEBUG 2401 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:25:41.722  INFO 2401 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:25:42.374  INFO 2401 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:25:42.440  INFO 2401 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 5 JPA repository interfaces.
+2021-02-14 13:25:42.676  INFO 2401 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:25:43.044  INFO 2401 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:25:43.050  INFO 2401 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:25:43.051  INFO 2401 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:25:43.112  INFO 2401 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:25:43.113  INFO 2401 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2021-02-14 13:25:43.248  INFO 2401 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:25:43.364  INFO 2401 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:25:43.445  INFO 2401 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:25:43.511  INFO 2401 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:25:43.511  WARN 2401 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-02-14 13:25:44.444  INFO 2401 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:25:44.457  INFO 2401 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:25:46.734  INFO 2401 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:25:46.740  INFO 2401 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:25:47.359  WARN 2401 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:25:47.640  INFO 2401 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:25:47.702  INFO 2401 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:25:47.878  INFO 2401 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:25:47.880  INFO 2401 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.748 seconds (JVM running for 7.512)
+2021-02-14 13:26:19.872  INFO 2401 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:26:19.873  INFO 2401 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:26:19.876  INFO 2401 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:26:19.893  INFO 2401 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:26:23.762  INFO 2416 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2416 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:26:23.764 DEBUG 2416 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:26:23.764  INFO 2416 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:26:24.332  INFO 2416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:26:24.393  INFO 2416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 5 JPA repository interfaces.
+2021-02-14 13:26:24.606  INFO 2416 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:26:24.878  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:26:24.884  INFO 2416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:26:24.885  INFO 2416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:26:24.946  INFO 2416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:26:24.946  INFO 2416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1149 ms
+2021-02-14 13:26:25.115  INFO 2416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:26:25.211  INFO 2416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:26:25.278  INFO 2416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:26:25.339  INFO 2416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:26:26.404  INFO 2416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:26:26.417  INFO 2416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:26:28.502  INFO 2416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:26:28.506  INFO 2416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:26:29.100  WARN 2416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:26:29.407  INFO 2416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:26:29.471  INFO 2416 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:26:29.645  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:26:29.647  INFO 2416 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.222 seconds (JVM running for 6.734)
+2021-02-14 13:26:50.166  INFO 2416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:26:50.166  INFO 2416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:26:50.177  INFO 2416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-02-14 13:26:57.578  INFO 2416 --- [http-nio-8080-exec-9] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:26:58.243  WARN 2416 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:26:58.306  WARN 2416 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:26:58.423  INFO 2416 --- [http-nio-8080-exec-9] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:27:17.207  INFO 2416 --- [http-nio-8080-exec-10] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:27:17.576  INFO 2416 --- [http-nio-8080-exec-10] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2021-02-14 13:30:18.458  INFO 2416 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:30:18.460  INFO 2416 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:30:18.462  INFO 2416 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:30:18.473  INFO 2416 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:30:21.661  INFO 2470 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2470 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:30:21.663 DEBUG 2470 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:30:21.664  INFO 2470 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:30:22.211  INFO 2470 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:30:22.269  INFO 2470 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 5 JPA repository interfaces.
+2021-02-14 13:30:22.475  INFO 2470 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:30:22.750  INFO 2470 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:30:22.757  INFO 2470 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:30:22.757  INFO 2470 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:30:22.811  INFO 2470 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:30:22.811  INFO 2470 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1101 ms
+2021-02-14 13:30:23.001  INFO 2470 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:30:23.094  INFO 2470 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:30:23.161  INFO 2470 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:30:23.218  INFO 2470 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:30:24.136  INFO 2470 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:30:24.150  INFO 2470 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:30:26.506  INFO 2470 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:30:26.513  INFO 2470 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:30:27.096  WARN 2470 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:30:27.355  INFO 2470 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:30:27.420  INFO 2470 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:30:27.602  INFO 2470 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:30:27.604  INFO 2470 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.261 seconds (JVM running for 6.953)
+2021-02-14 13:30:37.053  INFO 2470 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:30:37.053  INFO 2470 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:30:37.062  INFO 2470 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-02-14 13:30:37.088  INFO 2470 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:30:37.735  WARN 2470 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:30:37.795  WARN 2470 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:30:37.899  INFO 2470 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:30:38.940  INFO 2470 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:30:39.182  INFO 2470 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2021-02-14 13:31:54.256  INFO 2470 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:31:54.257  INFO 2470 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:31:54.259  INFO 2470 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:31:54.270  INFO 2470 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:31:57.110  INFO 2492 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2492 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:31:57.112 DEBUG 2492 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:31:57.112  INFO 2492 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:31:57.629  INFO 2492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:31:57.687  INFO 2492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 5 JPA repository interfaces.
+2021-02-14 13:31:57.909  INFO 2492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:31:58.200  INFO 2492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:31:58.206  INFO 2492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:31:58.206  INFO 2492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:31:58.263  INFO 2492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:31:58.263  INFO 2492 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1114 ms
+2021-02-14 13:31:58.430  INFO 2492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:31:58.532  INFO 2492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:31:58.602  INFO 2492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:31:58.661  INFO 2492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:31:59.696  INFO 2492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:31:59.707  INFO 2492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:32:01.934  INFO 2492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:32:01.946  INFO 2492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:32:02.621  WARN 2492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:32:02.942  INFO 2492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:32:03.018  INFO 2492 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:32:03.226  INFO 2492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:32:03.229  INFO 2492 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.429 seconds (JVM running for 6.979)
+2021-02-14 13:32:25.363  INFO 2492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:32:25.364  INFO 2492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:32:25.373  INFO 2492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-02-14 13:32:25.399  INFO 2492 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:32:26.111  WARN 2492 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:32:26.174  WARN 2492 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:32:26.306  INFO 2492 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:32:27.415  INFO 2492 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:32:27.709  INFO 2492 --- [http-nio-8080-exec-4] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2021-02-14 13:35:54.348  INFO 2492 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:35:54.349  INFO 2492 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:35:54.351  INFO 2492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:35:54.360  INFO 2492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:35:58.996  INFO 2561 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2561 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:35:58.999 DEBUG 2561 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:35:58.999  INFO 2561 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:35:59.580  INFO 2561 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:35:59.647  INFO 2561 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 5 JPA repository interfaces.
+2021-02-14 13:35:59.871  INFO 2561 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:36:00.162  INFO 2561 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:36:00.172  INFO 2561 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:36:00.172  INFO 2561 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:36:00.252  INFO 2561 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:36:00.253  INFO 2561 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1198 ms
+2021-02-14 13:36:00.390  INFO 2561 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:36:00.570  INFO 2561 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:36:00.695  INFO 2561 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:36:00.758  INFO 2561 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:36:01.674  INFO 2561 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:36:01.688  INFO 2561 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:36:03.664  INFO 2561 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:36:03.670  INFO 2561 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:36:04.365  WARN 2561 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:36:04.637  INFO 2561 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:36:04.701  INFO 2561 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:36:04.885  INFO 2561 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:36:04.888  INFO 2561 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.246 seconds (JVM running for 6.964)
+2021-02-14 13:36:10.248  INFO 2561 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:36:10.248  INFO 2561 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:36:10.256  INFO 2561 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-02-14 13:36:10.282  INFO 2561 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:36:10.876  WARN 2561 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:36:10.931  WARN 2561 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:36:11.032  INFO 2561 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:36:12.026  INFO 2561 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:36:12.280  INFO 2561 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2021-02-14 13:42:14.374  INFO 2561 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:42:14.375  INFO 2561 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:42:14.377  INFO 2561 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:42:14.383  INFO 2561 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:42:17.308  INFO 2621 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2621 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:42:17.310 DEBUG 2621 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:42:17.310  INFO 2621 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:42:17.870  INFO 2621 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:42:17.926  INFO 2621 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 5 JPA repository interfaces.
+2021-02-14 13:42:18.127  INFO 2621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:42:18.399  INFO 2621 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:42:18.405  INFO 2621 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:42:18.406  INFO 2621 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:42:18.463  INFO 2621 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:42:18.463  INFO 2621 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1099 ms
+2021-02-14 13:42:18.633  INFO 2621 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:42:18.729  INFO 2621 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:42:18.796  INFO 2621 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:42:18.860  INFO 2621 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:42:19.835  INFO 2621 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:42:19.850  INFO 2621 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:42:21.832  INFO 2621 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:42:21.839  INFO 2621 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:42:22.419  WARN 2621 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:42:22.718  INFO 2621 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:42:22.781  INFO 2621 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:42:22.957  INFO 2621 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:42:22.959  INFO 2621 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.002 seconds (JVM running for 6.642)
+2021-02-14 13:42:27.337  INFO 2621 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:42:27.337  INFO 2621 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:42:27.346  INFO 2621 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-02-14 13:42:27.373  INFO 2621 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:42:27.948  WARN 2621 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:42:28.005  WARN 2621 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:42:28.111  INFO 2621 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:42:29.192  INFO 2621 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:42:29.448  INFO 2621 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList
+2021-02-14 13:43:09.611  INFO 2621 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:43:09.612  INFO 2621 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:43:09.614  INFO 2621 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-14 13:43:09.620  INFO 2621 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-14 13:43:12.443  INFO 2635 --- [main] com.zf.BlogApplication                   : Starting BlogApplication on zhengfandeMacBook-Pro.local with PID 2635 (/Users/zhengfan/IdeaProjects/blog/target/classes started by zhengfan in /Users/zhengfan/IdeaProjects/blog)
+2021-02-14 13:43:12.445 DEBUG 2635 --- [main] com.zf.BlogApplication                   : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2021-02-14 13:43:12.445  INFO 2635 --- [main] com.zf.BlogApplication                   : No active profile set, falling back to default profiles: default
+2021-02-14 13:43:12.957  INFO 2635 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-14 13:43:13.015  INFO 2635 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 5 JPA repository interfaces.
+2021-02-14 13:43:13.228  INFO 2635 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-14 13:43:13.497  INFO 2635 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-14 13:43:13.503  INFO 2635 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-14 13:43:13.503  INFO 2635 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-02-14 13:43:13.557  INFO 2635 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-14 13:43:13.557  INFO 2635 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1077 ms
+2021-02-14 13:43:13.727  INFO 2635 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-14 13:43:13.829  INFO 2635 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-02-14 13:43:13.898  INFO 2635 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-02-14 13:43:13.957  INFO 2635 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-14 13:43:15.051  INFO 2635 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-14 13:43:15.064  INFO 2635 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-02-14 13:43:17.416  INFO 2635 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-14 13:43:17.423  INFO 2635 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-14 13:43:18.066  WARN 2635 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-14 13:43:18.334  INFO 2635 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-14 13:43:18.403  INFO 2635 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-14 13:43:18.590  INFO 2635 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-14 13:43:18.592  INFO 2635 --- [main] com.zf.BlogApplication                   : Started BlogApplication in 6.464 seconds (JVM running for 6.943)
+2021-02-14 13:43:22.546  INFO 2635 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-14 13:43:22.546  INFO 2635 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-14 13:43:22.554  INFO 2635 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-02-14 13:43:22.580  INFO 2635 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2021-02-14 13:43:23.195  WARN 2635 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:43:23.261  WARN 2635 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-14 13:43:23.364  INFO 2635 --- [http-nio-8080-exec-1] com.zf.aspect.LogAspect                  : Result : index
+2021-02-14 13:43:24.363  INFO 2635 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zf.controller.IndexController.newBlogs', args=[{}]}
+2021-02-14 13:43:24.652  INFO 2635 --- [http-nio-8080-exec-3] com.zf.aspect.LogAspect                  : Result : _fragments :: newBlogList

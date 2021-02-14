@@ -1,3 +1,5 @@
+
+
 #  配置 thymeleaf
 spring:
   thymeleaf:
@@ -11,10 +13,10 @@ spring:
 
   #   配置数据源
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.105:3306/blog?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://81.70.176.157:3306/blog?useUnicode=true&characterEncoding=utf8
+    username: jingjing
+    password: JingJing123
 #    jpa相关设置 sql
   jpa:
     hibernate:
@@ -32,3 +34,5 @@ logging:
 
 comment:
    avatar: /images/avatar.png
+server:
+  port: 80
