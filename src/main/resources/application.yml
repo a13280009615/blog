@@ -15,8 +15,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://81.70.176.157:3306/blog?useUnicode=true&characterEncoding=utf8
-    username: jingjing
-    password: JingJing123
+    username: blog
+    password: GspmGH4mbZJdxmb8
 #    jpa相关设置 sql
   jpa:
     hibernate:
